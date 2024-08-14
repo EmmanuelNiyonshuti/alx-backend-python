@@ -5,10 +5,8 @@ that returns a function.
 """
 from typing import Callable
 
-multiply = Callable[[float], float]
 
-
-def make_multiplier(multiplier: float) -> multiply:
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
     returns a function.
     Args:
@@ -16,7 +14,7 @@ def make_multiplier(multiplier: float) -> multiply:
     Return:
         a function.
     """
-    def multiplication(multiplier: float) -> float:
+    def multiplication(x: float) -> float:
         """
         multiplies two floats.
         Args:
@@ -24,5 +22,5 @@ def make_multiplier(multiplier: float) -> multiply:
         Return:
             a product of two floats.
         """
-        return multiplier * multiplier
+        return multiplier * x
     return multiplication
