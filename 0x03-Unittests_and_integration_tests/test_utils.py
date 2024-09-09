@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-""" conprises unit test for access_nested_map function """
+"""unit tests for access_nested_map function """
 import unittest
 from parameterized import parameterized
 from utils import access_nested_map
 
 
 class TestAccessNestedMap(unittest.TestCase):
-
+    """
+    Test case class for testing the access_nested_map function.
+    """
     @parameterized.expand([
         ({"a": 1}, ["a"], 1),
         ({"a": {"b": 2}}, ["a"], {"b": 2}),
