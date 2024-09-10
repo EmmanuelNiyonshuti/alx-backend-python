@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""unit tests for access_nested_map function """
+"""unit tests for utils functions """
 import unittest
 from unittest.mock import patch, Mock
 from parameterized import parameterized
