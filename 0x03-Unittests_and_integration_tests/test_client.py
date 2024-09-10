@@ -61,7 +61,7 @@ class TestGithubOrgClient(unittest.TestCase):
         ({"license": {"key": "my_license"}}, "my_license", True),
         ({"license": {"key": "other_license"}}, "my_license", False)
     ])
-    def test_has_licence(self, nested_map, license_key, license_value):
+    def test_has_license(self, nested_map, license_key, license_value):
         """ test `GithubOrgClient.has_license` method """
         res = GithubOrgClient.has_license(nested_map, license_key)
         self.assertEqual(res, license_value)
