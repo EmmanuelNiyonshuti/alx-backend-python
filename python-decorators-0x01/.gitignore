@@ -1,0 +1,4 @@
+.ruff_cache
+.users.db
+.venv
+__pycache__
