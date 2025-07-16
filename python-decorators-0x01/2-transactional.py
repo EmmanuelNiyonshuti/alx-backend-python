@@ -1,4 +1,3 @@
-import sqlite3
 import functools
 
 with_db_connection = __import__("1-with_db_connection.py").with_db_connection

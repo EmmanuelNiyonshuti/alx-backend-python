@@ -8,7 +8,7 @@ def log_queries(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         if args:
-            print(f"Executing query:", args)
+            print("Executing query:", args)
         for k, v in kwargs.items():
             if "query" in k.lower():
                 print(f"Executing query: {k} = {v}")
